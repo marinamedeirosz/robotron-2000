@@ -14,10 +14,10 @@
 </head>
 <body>
     <main>
-        <section class="robotron">
+        <!-- <section class="robotron">
             <img class="robo" src="img/robotron.png" alt="Robotron">
             <figcaption class="titulo">ROBOTRON <br>2000</figcaption>
-        </section>
+        </section> -->
 
         <section class="box estatisticas">
             <div class="estatistica">
@@ -52,45 +52,45 @@
                     <div class="peca">
                         <label for="" class="peca-titulo">Braços</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
-                            <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom onclick="diminuiBraco();" class="controle-ajuste">-</buttom>
+                            <input id="braco" type="text" class="controle-contador" value="00">
+                            <buttom onclick="aumentaBraco();" class="controle-ajuste">+</buttom>
                         </div>
                     </div>
                     <hr class="linha">
                     <div class="peca">
                         <label for="" class="peca-titulo">Blindagem</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
-                            <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom onclick="diminuiBlindagem();" class="controle-ajuste">-</buttom>
+                            <input id="blindagem" type="text" class="controle-contador" value="00">
+                            <buttom onclick="aumentaBlindagem();" class="controle-ajuste">+</buttom>
                         </div>
                     </div>
                     <hr class="linha">
                     <div class="peca">
                         <label for="" class="peca-titulo">Núcleos</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
-                            <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom onclick="diminuiNucleo();" class="controle-ajuste">-</buttom>
+                            <input id="nucleo" type="text" class="controle-contador" value="00">
+                            <buttom onclick="aumentaNucleo();" class="controle-ajuste">+</buttom>
                         </div>
                     </div>
                     <hr class="linha">
                     <div class="peca">
                         <label for="" class="peca-titulo">Pernas</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
-                            <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom onclick="diminuiPerna();" class="controle-ajuste">-</buttom>
+                            <input id="perna" type="text" class="controle-contador" value="00">
+                            <buttom onclick="aumentaPerna();" class="controle-ajuste">+</buttom>
                         </div>
                     </div>
                     <hr class="linha">
                     <div class="peca">
                         <label for="" class="peca-titulo">Foguetes</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
-                            <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom onclick="diminuiFoguete();" class="controle-ajuste">-</buttom>
+                            <input id="foguete" type="text" class="controle-contador" value="00">
+                            <buttom onclick="aumentaFoguete();" class="controle-ajuste">+</buttom>
                         </div>
                     </div>
                 </div>
@@ -98,5 +98,6 @@
             </form>
         </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
