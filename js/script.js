@@ -63,19 +63,19 @@ var robos = ["img/robotron-amarelo.png", "img/robotron-azul.png", "img/robotron-
 var i = 1;
 function direita(){
     let robo = document.getElementById("robo")
-    if (i < 5 && i >= -1){
+    if (i == 5){
+        i = -1;
+    }if (i < 5 && i >= -1){
         i += 1;
         robo.setAttribute('src', robos[i]);
-    }if (i == 5){
-        i = -1;
     }
 }
 function esquerda(){
     let robo = document.getElementById("robo")
-    if (i <= 6 && i >= 1){
+    if (i == 0){
+        i = 6;
+    }if (i <= 6 && i >= 1){
         i -= 1;
         robo.setAttribute('src', robos[i]);
-    }if (i == 0){
-        i = 6;
     }
 }
