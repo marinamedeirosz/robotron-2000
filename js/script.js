@@ -58,3 +58,24 @@ function diminuiFoguete(){
         valor.value = parseInt(valor.value) - 1;
     }
 }
+
+var robos = ["img/robotron-amarelo.png", "img/robotron-azul.png", "img/robotron-branco.png", "img/robotron-preto.png", "img/robotron-rosa.png", "img/robotron-vermelho.png"];
+var i = 1;
+function direita(){
+    let robo = document.getElementById("robo")
+    if (i < 5 && i >= -1){
+        i += 1;
+        robo.setAttribute('src', robos[i]);
+    }if (i == 5){
+        i = -1;
+    }
+}
+function esquerda(){
+    let robo = document.getElementById("robo")
+    if (i <= 6 && i >= 1){
+        i -= 1;
+        robo.setAttribute('src', robos[i]);
+    }if (i == 0){
+        i = 6;
+    }
+}
